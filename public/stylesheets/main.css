@@ -1,0 +1,20 @@
+
+.hero {
+    border-radius: 25px;
+}
+
+.navbar {
+    border-radius: 25px;
+}
+
+.navbar-brand {
+    margin-left: 50px;
+}
+
+.navbar-menu {
+    margin-right: 50px;
+}
+
+.content {
+    text-align: center;
+}

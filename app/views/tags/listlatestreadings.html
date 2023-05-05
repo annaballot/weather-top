@@ -1,0 +1,101 @@
+<div class="content box">
+    <div class="columns is-multiline has-text-left">
+        <div class="column is-one-fifth">
+            <div class="box has-background-black has-text-white">
+                <div class="columns">
+                    <div class="column is-two-thirds">
+                        <h2 class="title has-text-white">${_station.name}</h2>
+                    </div>
+                    <div class="column is-one-third">
+                        <i class="fa-solid fa-location-pin fa-2xl" style="color: #25c71a;"></i>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+        <div class="column is-one-fifth">
+            <div class="box has-background-black has-text-white">
+                <div class="columns">
+                    <div class="column is-two-thirds">
+                        <h2 class="title has-text-white">Weather</h2>
+                    </div>
+                    <div class="column is-one-third">
+                        <i class="fa-solid fa-cloud-sun fa-2xl" style="color: #BE25AB;"></i>
+                    </div>
+                </div>
+                ${_station.getLatestReading().getWeatherDescription()}
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+        <div class="column is-one-fifth">
+            <div class="box has-background-black has-text-white">
+                <div class="columns">
+                    <div class="column is-two-thirds">
+                        <h2 class="title has-text-white">Temp</h2>
+                    </div>
+                    <div class="column is-one-third">
+                        <i class="fa-solid fa-temperature-high fa-2xl" style="color: #66BEE4;"></i>
+                    </div>
+                </div>
+                ${_station.getLatestReading().getTemperature()} C
+                <br>
+                ${_station.getLatestReading().getTemperatureFahrenheit()} F
+                <br>
+<!--                Max: ${_station.getMaxTemperature()}-->
+                <br>
+                Max: ${_station.maxTemperature}
+                <br>
+                Min: ${_station.minTemperature}
+                <br>
+            </div>
+        </div>
+        <div class="column is-one-fifth">
+            <div class="box has-background-black has-text-white">
+                <div class="columns">
+                    <div class="column is-two-thirds">
+                        <h2 class="title has-text-white">Wind</h2>
+                    </div>
+                    <div class="column is-one-third">
+                        <i class="fa-solid fa-wind fa-2xl" style="color: #EDF741;"></i>
+                    </div>
+                </div>
+                ${_station.getLatestReading().getBeaufort()}
+                <br>
+                ${_station.getLatestReading().getWindDirectionText()}
+                <br>
+                Feels Like
+                <br>
+                ${_station.getLatestReading().getWindChill()}
+                <br>
+                Max: ${_station.maxWindSpeed}
+                <br>
+                Min: ${_station.minWindSpeed}
+            </div>
+        </div>
+        <div class="column is-one-fifth">
+            <div class="box has-background-black has-text-white">
+                <div class="columns">
+                    <div class="column is-two-thirds">
+                        <h2 class="title has-text-white">Pressure</h2>
+                    </div>
+                    <div class="column is-one-third">
+                        <i class="fa-solid fa-arrow-down-short-wide fa-2xl" style="color: #AA0C2C;"></i>
+                    </div>
+                </div>
+                ${_station.getLatestReading().getPressure()} hpa
+                <br>
+                Max: ${_station.maxPressure}
+                <br>
+                Min: ${_station.minPressure}
+                <br>
+                <br>
+            </div>
+        </div>
+    </div>
+</div>

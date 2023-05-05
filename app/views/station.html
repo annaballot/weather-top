@@ -1,0 +1,16 @@
+#{extends 'main.html' /}
+#{set title:'Station' /}
+
+#{menu id:"dashboard"/}
+
+<div class="content">
+    <h1 class="title">
+        ${station.name}
+    </h1>
+    #{listlatestreadings station:station/}
+    #{listreadings station:station/}
+
+    <div class="content box">
+    #{addreading station:station /}
+    </div>
+</div>
