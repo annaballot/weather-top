@@ -5,15 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="86b4b82b-bf4d-4890-9bf9-ad7a1bf05713" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Template_1000$_run_closure1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Template_1000$_run_closure1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Template_1010$_run_closure1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Template_1010$_run_closure1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/tags/listlatestreadings.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/tags/listlatestreadings.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/data.yml" beforeDir="false" afterPath="$PROJECT_DIR$/conf/data.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_tags_listlatestreadings.html" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_tags_listlatestreadings.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_conf_data.yml" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_conf_data.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-top.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/weather-top.ipr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/tags/noreadings.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Template_1008$_run_closure1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Template_1008$_run_closure1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Template_1012$_run_closure1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Template_1012$_run_closure1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Template_1012.class" beforeDir="false" afterPath="$PROJECT_DIR$/Template_1012.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/utilities/StationAnalytics.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/utilities/StationAnalytics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/station.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/station.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_station.html" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_station.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/utilities.StationAnalytics" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/utilities.StationAnalytics" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weather-top.iws" beforeDir="false" afterPath="$PROJECT_DIR$/weather-top.iws" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,8 +23,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -40,21 +39,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/annab/IdeaProjects/playlist-5.end-main/playlist.ipr",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/annab/IdeaProjects/playlist-5.end-main/playlist.ipr&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -70,7 +69,9 @@
       <workItem from="1683140596716" duration="2610000" />
       <workItem from="1683199603523" duration="456000" />
       <workItem from="1683200315112" duration="1378000" />
-      <workItem from="1683228171808" duration="4768000" />
+      <workItem from="1683228171808" duration="5192000" />
+      <workItem from="1683530091899" duration="12000" />
+      <workItem from="1683568563798" duration="2468000" />
     </task>
     <servers />
   </component>

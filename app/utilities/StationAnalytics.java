@@ -16,8 +16,11 @@ public class StationAnalytics {
                     maxTempReading = reading;
                 }
             }
+            return maxTempReading.temperature;
         }
-        return maxTempReading.temperature;
+        else {
+            return 0;
+        }
     }
 
     public static double getMinTemperature(List<Reading> readings)
@@ -30,8 +33,12 @@ public class StationAnalytics {
                     minTempReading = reading;
                 }
             }
+            return minTempReading.temperature;
         }
-        return minTempReading.temperature;
+        else {
+            return 0;
+        }
+
     }
 
     public static double getMaxWindSpeed(List<Reading> readings)
@@ -44,8 +51,12 @@ public class StationAnalytics {
                     maxWindSpeedReading = reading;
                 }
             }
+            return maxWindSpeedReading.windSpeed;
         }
-        return maxWindSpeedReading.windSpeed;
+        else {
+            return 0;
+        }
+
     }
 
     public static double getMinWindSpeed(List<Reading> readings)
@@ -58,8 +69,12 @@ public class StationAnalytics {
                     minWindSpeedReading = reading;
                 }
             }
+            return minWindSpeedReading.windSpeed;
         }
-        return minWindSpeedReading.windSpeed;
+        else {
+            return 0;
+        }
+
     }
 
     public static int getMaxPressure(List<Reading> readings)
@@ -72,8 +87,12 @@ public class StationAnalytics {
                     maxPressureReading = reading;
                 }
             }
+            return maxPressureReading.pressure;
         }
-        return maxPressureReading.pressure;
+        else {
+            return 0;
+        }
+
     }
 
     public static int getMinPressure(List<Reading> readings)
@@ -86,11 +105,12 @@ public class StationAnalytics {
                     minPressureReading = reading;
                 }
             }
+            return minPressureReading.pressure;
         }
-        return minPressureReading.pressure;
+        else {
+            return 0;
+        }
+
     }
-//    public double temperature;
-//    public double windSpeed;
-//    public int pressure;
-//    public int windDirection;
+
 }
