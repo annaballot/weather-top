@@ -27,6 +27,9 @@ public class Station extends Model
     public double minWindSpeed;
     public int maxPressure;
     public int minPressure;
+    public String tempTrend;
+    public String windSpeedTrend;
+    public String pressureTrend;
 
     public Station(String name, double latitude, double longitude)
     {
@@ -39,6 +42,28 @@ public class Station extends Model
     {
         if (readings.size()>0) {
             return readings.get(readings.size() - 1);
+        }
+        else {
+            Reading blankReading = new Reading(0, 0, 0, 0, 0);
+            return blankReading;
+        }
+    }
+
+    public Reading get2ndLatestReading()
+    {
+        if (readings.size()>1) {
+            return readings.get(readings.size() - 2);
+        }
+        else {
+            Reading blankReading = new Reading(0, 0, 0, 0, 0);
+            return blankReading;
+        }
+    }
+
+    public Reading get3rdLatestReading()
+    {
+        if (readings.size()>2) {
+            return readings.get(readings.size() - 3);
         }
         else {
             Reading blankReading = new Reading(0, 0, 0, 0, 0);

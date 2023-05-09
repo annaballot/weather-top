@@ -20,6 +20,9 @@ public class StationCtrl extends Controller
         station.minWindSpeed = StationAnalytics.getMinWindSpeed(station.readings);
         station.maxPressure = StationAnalytics.getMaxPressure(station.readings);
         station.minPressure = StationAnalytics.getMinPressure(station.readings);
+        station.tempTrend = StationAnalytics.getTempTrend(station, station.readings);
+        station.windSpeedTrend = StationAnalytics.getWindSpeedTrend(station, station.readings);
+        station.pressureTrend = StationAnalytics.getPressureTrend(station, station.readings);
         render("station.html", station);
     }
 
