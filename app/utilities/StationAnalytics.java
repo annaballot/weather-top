@@ -135,16 +135,20 @@ public class StationAnalytics {
         double temp3 = station.get3rdLatestReading().getTemperature();
 
         if (readings.size()<3) {
-            return "Steady";
+//            return "Steady";
+            return "fa-solid fa-arrow-up";
         }
         else if ((temp1 > temp2) && (temp2 > temp3)) {
-            return "Rising";
+//            return "Rising";
+            return "fa-solid fa-arrow-up";
         }
         else if ((temp1 < temp2) && (temp2 < temp3)) {
-            return "Falling";
+//            return "Falling";
+            return "fa-solid fa-arrow-up";
         }
         else {
-            return "Steady";
+            return "fa-solid fa-arrow-up";
+//            return "Steady";
         }
     }
 
@@ -175,16 +179,19 @@ public class StationAnalytics {
         double pressure3 = station.get3rdLatestReading().getPressure();
 
         if (readings.size()<3) {
-            return "Steady";
+//            return "Steady";
+            return "fa-solid fa-arrow-up";
         }
         else if ((pressure1 > pressure2) && (pressure2 > pressure3)) {
-            return "Rising";
+            return "fa-solid fa-arrow-up";
         }
         else if ((pressure1 < pressure2) && (pressure2 < pressure3)) {
-            return "Falling";
+//            return "Falling";
+            return "fa-solid fa-arrow-up";
         }
         else {
-            return "Steady";
+//            return "Steady";
+            return "fa-solid fa-arrow-up";
         }
     }
 
