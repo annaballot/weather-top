@@ -1,4 +1,5 @@
 Reading(r1):
+  date: 2021-01-19 08:31:00
   code: 800
   temperature: 0.5
   windSpeed: 3.5
@@ -6,6 +7,7 @@ Reading(r1):
   pressure: 1001
 
 Reading(r2):
+  date: 2021-01-20 09:34:00
   code: 600
   temperature: 6.0
   windSpeed: 2
@@ -13,6 +15,7 @@ Reading(r2):
   pressure: 1004
 
 Reading(r3):
+  date: 2021-01-20 10:31:00
   code: 700
   temperature: 8.0
   windSpeed: 1
@@ -20,6 +23,7 @@ Reading(r3):
   pressure: 1000
 
 Reading(r4):
+  date: 2021-01-19 09:31:00
   code: 200
   temperature: 0.5
   windSpeed: 3.5
@@ -28,6 +32,7 @@ Reading(r4):
 
   #  Test AB
 Reading(r6):
+  date: 2021-01-20 10:31:00
   code: 200
   temperature: 7
   windSpeed: 3.5
@@ -35,6 +40,7 @@ Reading(r6):
   pressure: 999
 
 Reading(r7):
+  date: 2021-01-19 08:31:00
   code: 200
   temperature: 9
   windSpeed: 3.5
@@ -42,6 +48,7 @@ Reading(r7):
   pressure: 890
 
 Reading(r8):
+  date: 2021-01-19 09:31:00
   code: 200
   temperature: -1
   windSpeed: 2.9
@@ -49,6 +56,7 @@ Reading(r8):
   pressure: 1200
 
 Reading(r9):
+  date: 2021-01-20 10:31:00
   code: 200
   temperature: -5.6
   windSpeed: 1.3
@@ -78,6 +86,7 @@ Station(s2):
 
 #  Test AB
 Reading(r5):
+  date: 2021-01-19 09:31:00
   code: 800
   temperature: 20
   windSpeed: 15.9
