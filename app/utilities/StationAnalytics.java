@@ -136,7 +136,7 @@ public class StationAnalytics {
 
         if (readings.size()<3) {
 //            return "Steady";
-            return "fa-solid fa-arrow-up";
+            return "fa-solid fa-arrow-right-arrow-left";
         }
         else if ((temp1 > temp2) && (temp2 > temp3)) {
 //            return "Rising";
@@ -144,10 +144,10 @@ public class StationAnalytics {
         }
         else if ((temp1 < temp2) && (temp2 < temp3)) {
 //            return "Falling";
-            return "fa-solid fa-arrow-up";
+            return "fa-solid fa-arrow-down";
         }
         else {
-            return "fa-solid fa-arrow-up";
+            return "fa-solid fa-arrow-right-arrow-left";
 //            return "Steady";
         }
     }
