@@ -16,7 +16,7 @@ public class Conversions {
                     weatherDescription = "Clear";
                     break;
                 case 200:
-                    weatherDescription = "Partial clouds";
+                    weatherDescription = "Partial Clouds";
                     break;
                 case 300:
                     weatherDescription = "Cloudy";
