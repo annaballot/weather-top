@@ -159,16 +159,20 @@ public class StationAnalytics {
         double windSpeed3 = station.get3rdLatestReading().getWindSpeed();
 
         if (readings.size()<3) {
-            return "Steady";
+//            return "Steady";
+            return "fa-solid fa-arrow-right-arrow-left";
         }
         else if ((windSpeed1 > windSpeed2) && (windSpeed2 > windSpeed3)) {
-            return "Rising";
+//            return "Rising";
+            return "fa-solid fa-arrow-up";
         }
         else if ((windSpeed1 < windSpeed2) && (windSpeed2 < windSpeed3)) {
-            return "Falling";
+//            return "Falling";
+            return "fa-solid fa-arrow-down";
         }
         else {
-            return "Steady";
+//            return "Steady";
+            return "fa-solid fa-arrow-right-arrow-left";
         }
     }
 
@@ -180,18 +184,19 @@ public class StationAnalytics {
 
         if (readings.size()<3) {
 //            return "Steady";
-            return "fa-solid fa-arrow-up";
+            return "fa-solid fa-arrow-right-arrow-left";
         }
         else if ((pressure1 > pressure2) && (pressure2 > pressure3)) {
+//            Rising
             return "fa-solid fa-arrow-up";
         }
         else if ((pressure1 < pressure2) && (pressure2 < pressure3)) {
 //            return "Falling";
-            return "fa-solid fa-arrow-up";
+            return "fa-solid fa-arrow-down";
         }
         else {
 //            return "Steady";
-            return "fa-solid fa-arrow-up";
+            return "fa-solid fa-arrow-right-arrow-left";
         }
     }
 
