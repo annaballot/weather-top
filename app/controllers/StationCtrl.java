@@ -1,13 +1,13 @@
 package controllers;
 
-import java.util.List;
-
 import models.Station;
 import models.Reading;
 import play.Logger;
 import play.mvc.Controller;
-import utilities.StationAnalytics;
-import utilities.DateTime;
+import utils.DateTime;
+import utils.StationAnalytics;
+import java.util.Date;
+
 
 public class StationCtrl extends Controller
 {
@@ -29,7 +29,8 @@ public class StationCtrl extends Controller
 
     public static void addReading(Long id, int code, double temperature, double windSpeed, int pressure, int windDirection)
     {
-        Reading reading = new Reading(code, temperature, windSpeed, pressure, windDirection);
+        Date date = DateTime.getDateTime();
+        Reading reading = new Reading(date, code, temperature, windSpeed, pressure, windDirection);
         Station station = Station.findById(id);
         station.readings.add(reading);
         station.save();

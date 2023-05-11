@@ -8,9 +8,7 @@ import javax.persistence.Entity;
 import javax.persistence.OneToMany;
 
 import play.db.jpa.Model;
-
-import utilities.Conversions;
-import utilities.StationAnalytics;
+import java.util.Date;
 
 @Entity
 public class Station extends Model
@@ -44,7 +42,8 @@ public class Station extends Model
             return readings.get(readings.size() - 1);
         }
         else {
-            Reading blankReading = new Reading(0, 0, 0, 0, 0);
+            Date date = new Date();
+            Reading blankReading = new Reading(date, 0, 0, 0, 0, 0);
             return blankReading;
         }
     }
@@ -55,7 +54,8 @@ public class Station extends Model
             return readings.get(readings.size() - 2);
         }
         else {
-            Reading blankReading = new Reading(0, 0, 0, 0, 0);
+            Date date = new Date();
+            Reading blankReading = new Reading(date, 0, 0, 0, 0, 0);
             return blankReading;
         }
     }
@@ -66,7 +66,8 @@ public class Station extends Model
             return readings.get(readings.size() - 3);
         }
         else {
-            Reading blankReading = new Reading(0, 0, 0, 0, 0);
+            Date date = new Date();
+            Reading blankReading = new Reading(date, 0, 0, 0, 0, 0);
             return blankReading;
         }
     }

@@ -1,17 +1,17 @@
 package models;
 
 import javax.persistence.Entity;
+import java.util.Date;
 
-import play.Logger;
 import play.db.jpa.Model;
-import utilities.Conversions;
-import utilities.DateTime;
+import utils.Conversions;
+import utils.DateTime;
 
 
 @Entity
 public class Reading extends Model
 {
-    public String date;
+    public Date date;
     public int code;
     public double temperature;
     public double windSpeed;
@@ -19,15 +19,14 @@ public class Reading extends Model
     public int windDirection;
 
 
-    public Reading(int code, double temperature, double windSpeed, int pressure, int windDirection) {
-        String date = DateTime.getDateTime();
+    public Reading(Date date, int code, double temperature, double windSpeed, int pressure, int windDirection) {
+        this.date = date;
         this.code = code;
         this.temperature = temperature;
         this.windSpeed = windSpeed;
         this.pressure = pressure;
         this.windDirection = windDirection;
     }
-
 
 
     //getters

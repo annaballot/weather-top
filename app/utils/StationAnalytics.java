@@ -1,4 +1,4 @@
-package utilities;
+package utils;
 
 import models.Reading;
 import models.Station;
@@ -113,20 +113,6 @@ public class StationAnalytics {
         }
 
     }
-
-
-
-//    public static Reading getLatestReading()
-//    {
-//        if (readings.size()>0) {
-//            return readings.get(readings.size() - 1);
-//        }
-//        else {
-//            Reading blankReading = new Reading(0, 0, 0, 0, 0);
-//            return blankReading;
-//        }
-//    }
-
 
     public static String getTempTrend(Station station, List<Reading> readings)
     {
