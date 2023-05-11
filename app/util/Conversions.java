@@ -2,11 +2,21 @@ package util;
 
 public class Conversions {
 
+    /**
+     * Takes in the temperature in celsius and converts in to fahrenheit.
+     * The fahrenheit temperature is returned
+     *
+     * @param  temperature  temperature in celsius
+     * @return              the temperature in fahrenheit
+     */
     public static double convertTempToFahrenheit(double temperature) {
         return temperature * (9 / 5) + 32;
-//        return 1234.0;
     }
 
+    /**
+     * @param code
+     * @return
+     */
     public static String convertWeatherCodes(int code) {
         String weatherDescription;
 //put in error checking in case it's not an int
@@ -124,6 +134,12 @@ public class Conversions {
         return compassDirection;
     }
 
+    /**
+     * This calculates the wind chill
+     * @param temperature
+     * @param windSpeed
+     * @return
+     */
     public static double calculateWindChill(double temperature, double windSpeed) {
         //to round to 1 decimal place, this multiplys the calculation by 10, rounds, then divides by 10
         return (Math.round((13.12 + (0.6215 * temperature) - 11.37 * (Math.pow(windSpeed, 0.16)) + 0.3965 * temperature * (Math.pow(windSpeed, 0.16)))*10))/10.0;

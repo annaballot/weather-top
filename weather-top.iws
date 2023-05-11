@@ -5,19 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="86b4b82b-bf4d-4890-9bf9-ad7a1bf05713" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Template_1011$_run_closure1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Template_1011$_run_closure1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Template_1011.class" beforeDir="false" afterPath="$PROJECT_DIR$/Template_1011.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/StationCtrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/StationCtrl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/Reading.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Reading.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/Station.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Station.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/utilities/Conversions.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/Conversions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/utilities/DateTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/DateTime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/utilities/StationAnalytics.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/StationAnalytics.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/tags/listreadings.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/tags/listreadings.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_tags_listreadings.html" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_tags_listreadings.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/util/Conversions.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/util/Conversions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.StationCtrl" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.StationCtrl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/models.Reading" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/models.Reading" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/models.Station" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/models.Station" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weather-top.iws" beforeDir="false" afterPath="$PROJECT_DIR$/weather-top.iws" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +69,7 @@
       <workItem from="1683568563798" duration="2468000" />
       <workItem from="1683618142620" duration="7723000" />
       <workItem from="1683701039835" duration="13357000" />
-      <workItem from="1683809121065" duration="7551000" />
+      <workItem from="1683809121065" duration="8951000" />
     </task>
     <servers />
   </component>
