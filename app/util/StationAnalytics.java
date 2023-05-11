@@ -1,4 +1,4 @@
-package utils;
+package util;
 
 import models.Reading;
 import models.Station;

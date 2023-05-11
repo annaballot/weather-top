@@ -4,8 +4,7 @@ import javax.persistence.Entity;
 import java.util.Date;
 
 import play.db.jpa.Model;
-import utils.Conversions;
-import utils.DateTime;
+import util.Conversions;
 
 
 @Entity
