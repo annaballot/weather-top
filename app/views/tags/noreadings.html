@@ -1,10 +1,29 @@
 <div class="content box">
-    <div class="box has-background-black has-text-white">
-        <br>
-        No readings recorded for this station.
-        <br>
-        <br>
-        Please add readings below.
-        <br>
+    <div class="columns is-multiline has-text-left">
+        <div class="column is-one-fifth">
+            <div class="box has-background-black has-text-white" style="height:250px;">
+                <div class="columns">
+                    <div class="column is-two-thirds">
+                        <h2 class="title has-text-white">${_station.name}</h2>
+                    </div>
+                    <div class="column is-one-third">
+                        <i class="fa-solid fa-location-pin fa-2xl" style="color: #25c71a;"></i>
+                    </div>
+                </div>
+                <br>
+                Lat: ${_station.latitude}
+                <br>
+                Lng: ${_station.longitude}
+
+            </div>
+        </div>
+        <div class="column is-four-fifths">
+            <div class="box has-background-black has-text-white has-text-centered" style="height:250px;">
+                <br>
+                <br>
+                <br>
+                No readings recorded for this station.
+            </div>
+        </div>
     </div>
 </div>
