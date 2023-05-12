@@ -3,13 +3,14 @@
 
 #{menu id:"dashboard"/}
 
-#{list items:stations, as:'station'}
+
+#{list items:_station.sortStations(stations), as:'station'}
 <div class="content box">
     #{if station.readings.size() > 0}
-    #{listlatestreadings station:station/}
+    #{listStations station:station/}
     #{/if}
     #{else}
-    #{noreadings station:station/}
+        #{noreadings station:station/}
     #{/else}
     <p>
         <span class="icon is-large">
@@ -17,7 +18,6 @@
             <i class="fas fa-folder fa-2xl"></i>
         </a>
         </span>
-
         <span class="icon is-large">
         <a href="/dashboard/deletestation/${station.id}" class="icon has-text-danger">
             <i class="fas fa-trash fa-2xl"></i>

@@ -6,7 +6,10 @@ import play.Logger;
 import play.mvc.Controller;
 import util.DateTime;
 import util.StationAnalytics;
+
+import java.util.Comparator;
 import java.util.Date;
+import java.util.List;
 
 
 public class StationCtrl extends Controller
@@ -48,6 +51,11 @@ public class StationCtrl extends Controller
         render("station.html", station);
     }
 
+    public static List<Station> sortStations(List<Station> station) {
+        station.sort(Comparator.comparing(Station::getName));
+        Logger.info("Sorting Stations Alphabetically by Name");
 
+        return station;
+    }
 
 }
