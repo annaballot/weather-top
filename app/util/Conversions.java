@@ -141,8 +141,13 @@ public class Conversions {
      * @return
      */
     public static double calculateWindChill(double temperature, double windSpeed) {
-        //to round to 1 decimal place, this multiplys the calculation by 10, rounds, then divides by 10
-        return (Math.round((13.12 + (0.6215 * temperature) - 11.37 * (Math.pow(windSpeed, 0.16)) + 0.3965 * temperature * (Math.pow(windSpeed, 0.16)))*10))/10.0;
+        return roundNumber((13.12 + (0.6215 * temperature) - 11.37 * (Math.pow(windSpeed, 0.16)) + 0.3965 * temperature * (Math.pow(windSpeed, 0.16))),1);
+    }
+
+    public static double roundNumber(double inputNumber, int numberOfDecimalPlaces) {
+        //to round to 1 decimal place, this multiplies the calculation by 10, rounds, then divides by 10
+        double scale = Math.round(Math.pow(10, numberOfDecimalPlaces));
+        return Math.round(inputNumber * scale) / scale;
     }
 
     }
