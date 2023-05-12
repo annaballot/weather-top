@@ -15,7 +15,7 @@ public class Dashboard extends Controller
   {
     Logger.info("Rendering Dashboard");
     Member member = Accounts.getLoggedInMember();
-    List<Station> stations = member.stations;
+    List<Station> stations = StationCtrl.sortStations(member.stations);
     render ("dashboard.html", stations);
   }
 

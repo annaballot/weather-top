@@ -4,10 +4,10 @@
 #{menu id:"dashboard"/}
 
 
-#{list items:_station.sortStations(stations), as:'station'}
+#{list items:stations, as:'station'}
 <div class="content box">
     #{if station.readings.size() > 0}
-    #{listStations station:station/}
+    #{listlatestreadings station:station/}
     #{/if}
     #{else}
         #{noreadings station:station/}

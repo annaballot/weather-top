@@ -5,20 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="86b4b82b-bf4d-4890-9bf9-ad7a1bf05713" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/views/tags/listStations.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Template_1001$_run_closure1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Template_1001$_run_closure1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Template_1005$_run_closure1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Template_1005$_run_closure1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Template_1010$_run_closure1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Template_1010$_run_closure1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Template_1010.class" beforeDir="false" afterPath="$PROJECT_DIR$/Template_1010.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Template_1004$_run_closure1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Template_1004$_run_closure1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Template_1004.class" beforeDir="false" afterPath="$PROJECT_DIR$/Template_1004.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/Dashboard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/StationCtrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/StationCtrl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/Station.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Station.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/util/StationAnalytics.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/util/StationAnalytics.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_dashboard.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_tags_listStations.html" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_tags_listStations.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.Dashboard" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.Dashboard" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.StationCtrl" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/controllers.StationCtrl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/models.Station" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/models.Station" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/util.StationAnalytics" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/util.StationAnalytics" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-top.iml" beforeDir="false" afterPath="$PROJECT_DIR$/weather-top.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/classes/controllers/StationCtrl.class" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/classes/controllers/StationCtrl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weather-top.iws" beforeDir="false" afterPath="$PROJECT_DIR$/weather-top.iws" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,21 +41,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/annab/IdeaProjects/patweathertoprelease2/weathertop.ipr&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/annab/IdeaProjects/weathertop-archive/weathertop-anna-ballot-v38/weather-top.ipr",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -81,7 +77,7 @@
       <workItem from="1683618142620" duration="7723000" />
       <workItem from="1683701039835" duration="13357000" />
       <workItem from="1683809121065" duration="8951000" />
-      <workItem from="1683874846219" duration="9057000" />
+      <workItem from="1683874846219" duration="10158000" />
     </task>
     <servers />
   </component>
