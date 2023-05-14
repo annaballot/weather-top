@@ -8,6 +8,7 @@ import models.Station;
 import models.Reading;
 import play.Logger;
 import play.mvc.Controller;
+import util.StationAnalytics;
 
 public class Dashboard extends Controller
 {
@@ -16,6 +17,16 @@ public class Dashboard extends Controller
     Logger.info("Rendering Dashboard");
     Member member = Accounts.getLoggedInMember();
     List<Station> stations = StationCtrl.sortStations(member.stations);
+    Station station = Station.findById(id);
+    station.maxTemperature = StationAnalytics.getMaxTemperature(station.readings);
+    station.minTemperature = StationAnalytics.getMinTemperature(station.readings);
+    station.maxWindSpeed = StationAnalytics.getMaxWindSpeed(station.readings);
+    station.minWindSpeed = StationAnalytics.getMinWindSpeed(station.readings);
+    station.maxPressure = StationAnalytics.getMaxPressure(station.readings);
+    station.minPressure = StationAnalytics.getMinPressure(station.readings);
+    station.tempTrend = StationAnalytics.getTempTrend(station, station.readings);
+    station.windSpeedTrend = StationAnalytics.getWindSpeedTrend(station, station.readings);
+    station.pressureTrend = StationAnalytics.getPressureTrend(station, station.readings);
     render ("dashboard.html", stations);
   }
 
@@ -40,5 +51,6 @@ public class Dashboard extends Controller
     station.delete();
     redirect ("/dashboard");
   }
+
 }
 
