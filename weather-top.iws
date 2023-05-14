@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="86b4b82b-bf4d-4890-9bf9-ad7a1bf05713" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/clevercloud/play1_version" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/system.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Bootstrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/Bootstrap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/application.conf" beforeDir="false" afterPath="$PROJECT_DIR$/conf/application.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clevercloud/play1_version" beforeDir="false" afterPath="$PROJECT_DIR$/clevercloud/play1_version" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conf/dependencies.yml" beforeDir="false" afterPath="$PROJECT_DIR$/conf/dependencies.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/Bootstrap" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/Bootstrap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/classes/Bootstrap.class" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/classes/Bootstrap.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weather-top.iws" beforeDir="false" afterPath="$PROJECT_DIR$/weather-top.iws" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +73,8 @@
       <workItem from="1683985260971" duration="2879000" />
       <workItem from="1683990801623" duration="178000" />
       <workItem from="1683990996421" duration="6519000" />
-      <workItem from="1684082844213" duration="1007000" />
+      <workItem from="1684082844213" duration="1607000" />
+      <workItem from="1684087348485" duration="861000" />
     </task>
     <servers />
   </component>
