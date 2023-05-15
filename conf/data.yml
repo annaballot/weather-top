@@ -30,40 +30,6 @@ Reading(r4):
   windDirection: 120
   pressure: 999
 
-  #  Test AB
-Reading(r6):
-  date: 2021-01-20 10:31:00
-  code: 200
-  temperature: 7
-  windSpeed: 3.5
-  windDirection: 120
-  pressure: 999
-
-Reading(r7):
-  date: 2021-01-19 08:31:00
-  code: 200
-  temperature: 9
-  windSpeed: 3.5
-  windDirection: 110
-  pressure: 890
-
-Reading(r8):
-  date: 2021-01-19 09:31:00
-  code: 200
-  temperature: -1
-  windSpeed: 2.9
-  windDirection: 90
-  pressure: 1200
-
-Reading(r9):
-  date: 2021-01-20 10:31:00
-  code: 200
-  temperature: -5.6
-  windSpeed: 1.3
-  windDirection: 120
-  pressure: 1250
-  #  Test AB
-
 Station(s1):
   name: Tramore
   latitude: 52.1623500
@@ -71,8 +37,6 @@ Station(s1):
   readings:
     - r1
     - r2
-    - r6
-    - r7
 
 Station(s2):
   name: Dunmore
@@ -81,30 +45,12 @@ Station(s2):
   readings:
     - r3
     - r4
-    - r8
-    - r9
-
-#  Test AB
-Reading(r5):
-  date: 2021-01-19 09:31:00
-  code: 800
-  temperature: 20
-  windSpeed: 15.9
-  windDirection: 350
-  pressure: 400
-
-Station(s3):
-   name: Dungarvan
-   readings:
-    - r5
-# Test AB
 
 Member(m1):
   email: homer@simpson.com
   password: secret
   firstname: Homer
-  lastname : Simpson
-  stations :
+  lastname: Simpson
+  stations:
     - s1
     - s2
-    - s3
