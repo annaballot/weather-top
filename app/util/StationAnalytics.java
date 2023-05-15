@@ -120,21 +120,17 @@ public class StationAnalytics {
         double temp2 = station.get2ndLatestReading().getTemperature();
         double temp3 = station.get3rdLatestReading().getTemperature();
 
-        if (readings.size()<3) {
-//            return "Steady";
+        if (readings.size()<3) {                                                //Steady
             return "fa-solid fa-arrow-right-arrow-left";
         }
-        else if ((temp1 > temp2) && (temp2 > temp3)) {
-//            return "Rising";
+        else if ((temp1 > temp2) && (temp2 > temp3)) {                          //Rising
             return "fa-solid fa-arrow-up";
         }
-        else if ((temp1 < temp2) && (temp2 < temp3)) {
-//            return "Falling";
+        else if ((temp1 < temp2) && (temp2 < temp3)) {                          //Falling
             return "fa-solid fa-arrow-down";
         }
         else {
-            return "fa-solid fa-arrow-right-arrow-left";
-//            return "Steady";
+            return "fa-solid fa-arrow-right-arrow-left";                        //Steady
         }
     }
 
@@ -144,20 +140,16 @@ public class StationAnalytics {
         double windSpeed2 = station.get2ndLatestReading().getWindSpeed();
         double windSpeed3 = station.get3rdLatestReading().getWindSpeed();
 
-        if (readings.size()<3) {
-//            return "Steady";
+        if (readings.size()<3) {                                                //Steady
             return "fa-solid fa-arrow-right-arrow-left";
         }
-        else if ((windSpeed1 > windSpeed2) && (windSpeed2 > windSpeed3)) {
-//            return "Rising";
+        else if ((windSpeed1 > windSpeed2) && (windSpeed2 > windSpeed3)) {      //Rising
             return "fa-solid fa-arrow-up";
         }
-        else if ((windSpeed1 < windSpeed2) && (windSpeed2 < windSpeed3)) {
-//            return "Falling";
+        else if ((windSpeed1 < windSpeed2) && (windSpeed2 < windSpeed3)) {      //Falling
             return "fa-solid fa-arrow-down";
         }
-        else {
-//            return "Steady";
+        else {                                                                  //Steady
             return "fa-solid fa-arrow-right-arrow-left";
         }
     }
@@ -168,24 +160,18 @@ public class StationAnalytics {
         double pressure2 = station.get2ndLatestReading().getPressure();
         double pressure3 = station.get3rdLatestReading().getPressure();
 
-        if (readings.size()<3) {
-//            return "Steady";
+        if (readings.size()<3) {                                                //Steady
             return "fa-solid fa-arrow-right-arrow-left";
         }
-        else if ((pressure1 > pressure2) && (pressure2 > pressure3)) {
-//            Rising
+        else if ((pressure1 > pressure2) && (pressure2 > pressure3)) {          //Rising
             return "fa-solid fa-arrow-up";
         }
-        else if ((pressure1 < pressure2) && (pressure2 < pressure3)) {
-//            return "Falling";
+        else if ((pressure1 < pressure2) && (pressure2 < pressure3)) {          //Falling
             return "fa-solid fa-arrow-down";
         }
-        else {
-//            return "Steady";
+        else {                                                                  //Steady
             return "fa-solid fa-arrow-right-arrow-left";
         }
     }
-
-
 
 }

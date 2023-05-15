@@ -54,7 +54,6 @@ public class StationCtrl extends Controller
     public static List<Station> sortStations(List<Station> station) {
         station.sort(Comparator.comparing(Station::getName, String.CASE_INSENSITIVE_ORDER));
         Logger.info("Sorting Stations Alphabetically by Name");
-
         return station;
     }
 

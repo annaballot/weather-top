@@ -50,8 +50,6 @@ public class Station extends Model
         }
     }
 
-//    public List<Reading> getLatestReading
-
     public Reading get2ndLatestReading()
     {
         if (readings.size()>1) {
@@ -84,13 +82,6 @@ public class Station extends Model
     public String getName() {
         return name;
     }
-
-//    public double getMaxTemperature()
-//    {
-//            return StationAnalytics.getMaxTemperature(readings);
-//
-//    }
-
 
 
 }
