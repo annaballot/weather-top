@@ -64,12 +64,17 @@ public class Accounts extends Controller
         render("myaccount.html", member);
     }
 
+//    public static void myAccountUpdated()
+//    {
+//        render("myaccountupdated.html");
+//    }
     public static void updateAccount(String firstname, String lastname, String email, String password)
     {
         Logger.info("Updating User Details " + email);
-        Member member = Member.findByEmail(email);
+        Member member = getLoggedInMember();
         member.setFirstname(firstname);
+//        member.setLastname(lastname);
         member.save();
-        redirect("/");
+        render("myaccountupdated.html");
     }
 }
