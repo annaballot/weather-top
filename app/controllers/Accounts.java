@@ -59,6 +59,17 @@ public class Accounts extends Controller
 
     public static void myAccount()
     {
-        render("myaccount.html");
+        Member member = getLoggedInMember();
+
+        render("myaccount.html", member);
+    }
+
+    public static void updateAccount(String firstname, String lastname, String email, String password)
+    {
+        Logger.info("Updating User Details " + email);
+        Member member = Member.findByEmail(email);
+        member.setFirstname(firstname);
+        member.save();
+        redirect("/");
     }
 }

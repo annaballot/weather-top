@@ -3,14 +3,55 @@
 
 #{menu id:"myaccount"/}
 
-<div class="content">
-    <h1 class="title">
-        Test Header
-    </h1>
+<section class="content box">
+    <div class="columns">
+        <div class="column is-half">
+            <figure class="image">
+                <img src="/public/images/weather-icons-set.jpg">
+            </figure>
+        </div>
+        <div class="column is-half">
+            <div class="content box">
+                <form action="/updateaccount" method="POST">
+                    <h3 class="subtitle">Register</h3>
+                    <div class="field is-horizontal field-body">
+                        <div class="field">
+                            <label class="label">First Name</label>
+                            <p class="control is-expanded">
+                                <input class="input" type="text" placeholder=${member.getFirstname()} name="firstname">
+                            </p>
+                        </div>
+                        <div class="field">
+                            <label class="label">Last Name</label>
+                            <p class="control">
+                                <input class="input" type="text" placeholder=${member.getLastname()} name="lastname">
+                            </p>
+                        </div>
+                    </div>
+                    <fieldset disabled>
+                    <div class="field">
+                        <label class="label">Email</label>
+                        <p class="control has-icons-left">
 
-Testing
-
-    <div class="content box">
-        Testing below
+                            <input class="input" placeholder=${member.getEmail()} type="email" name="email">
+                            <span class="icon is-small is-left">
+                <i class="fas fa-envelope"></i>
+              </span>
+                        </p>
+                    </div>
+                        </fieldset>
+                    <div class="field">
+                        <label class="label">Password</label>
+                        <p class="control has-icons-left">
+                            <input class="input" placeholder=${member.getPassword()} type="password" name="password">
+                            <span class="icon is-small is-left">
+              <i class="fas fa-lock"></i>
+          </span>
+                        </p>
+                    </div>
+                    <button class="button is-link is-info">Submit</button>
+                </form>
+            </div>
+        </div>
     </div>
-</div>
+</section>
