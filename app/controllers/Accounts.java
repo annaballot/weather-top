@@ -56,4 +56,9 @@ public class Accounts extends Controller
         }
         return member;
     }
+
+    public static void myAccount()
+    {
+        render("myaccount.html");
+    }
 }
