@@ -73,7 +73,8 @@ public class Accounts extends Controller
         Logger.info("Updating User Details " + email);
         Member member = getLoggedInMember();
         member.setFirstname(firstname);
-//        member.setLastname(lastname);
+        member.setLastname(lastname);
+        member.setPassword(password);
         member.save();
         render("myaccountupdated.html");
     }
