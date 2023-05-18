@@ -9,14 +9,14 @@
     </h1>
 
     #{if station.readings.size() > 0}
-        #{listlatestreadings station:station/}
-        #{listreadings station:station/}
+    #{listlatestreadings station:station/}
+    #{listreadings station:station/}
     #{/if}
     #{else}
-        #{noreadings station:station/}
+    #{noreadings station:station/}
     #{/else}
 
     <div class="content box">
-    #{addreading station:station /}
+        #{addreading station:station /}
     </div>
 </div>

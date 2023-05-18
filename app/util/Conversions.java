@@ -2,55 +2,41 @@ package util;
 
 public class Conversions {
 
-    /**
-     * Takes in the temperature in celsius and converts in to fahrenheit.
-     * The fahrenheit temperature is returned
-     *
-     * @param  temperature  temperature in celsius
-     * @return              the temperature in fahrenheit
-     */
     public static double convertTempToFahrenheit(double temperature) {
         return temperature * (9 / 5) + 32;
     }
 
-    /**
-     * @param code
-     * @return
-     */
     public static String convertWeatherCodes(int code) {
         String weatherDescription;
-//put in error checking in case it's not an int
-//        while (code != 0) {
-            switch (code) {
-                case 100:
-                    weatherDescription = "Clear";
-                    break;
-                case 200:
-                    weatherDescription = "Partial Clouds";
-                    break;
-                case 300:
-                    weatherDescription = "Cloudy";
-                    break;
-                case 400:
-                    weatherDescription = "Light Showers";
-                    break;
-                case 500:
-                    weatherDescription = "Heavy Showers";
-                    break;
-                case 600:
-                    weatherDescription = "Rain";
-                    break;
-                case 700:
-                    weatherDescription = "Snow";
-                    break;
-                case 800:
-                    weatherDescription = "Thunder";
-                    break;
-                default:
-                    System.out.println("Invalid option entered: " + code);
-                    weatherDescription = "Invalid";
-                    break;
-//            }
+        switch (code) {
+            case 100:
+                weatherDescription = "Clear";
+                break;
+            case 200:
+                weatherDescription = "Partial Clouds";
+                break;
+            case 300:
+                weatherDescription = "Cloudy";
+                break;
+            case 400:
+                weatherDescription = "Light Showers";
+                break;
+            case 500:
+                weatherDescription = "Heavy Showers";
+                break;
+            case 600:
+                weatherDescription = "Rain";
+                break;
+            case 700:
+                weatherDescription = "Snow";
+                break;
+            case 800:
+                weatherDescription = "Thunder";
+                break;
+            default:
+                System.out.println("Invalid option entered: " + code);
+                weatherDescription = "Invalid";
+                break;
         }
         return weatherDescription;
     }
@@ -88,7 +74,6 @@ public class Conversions {
         }
         return beaufort;
     }
-
 
 
     public static String convertWindDirection(double windDegree) {
@@ -134,14 +119,8 @@ public class Conversions {
         return compassDirection;
     }
 
-    /**
-     * This calculates the wind chill
-     * @param temperature
-     * @param windSpeed
-     * @return
-     */
     public static double calculateWindChill(double temperature, double windSpeed) {
-        return roundNumber((13.12 + (0.6215 * temperature) - 11.37 * (Math.pow(windSpeed, 0.16)) + 0.3965 * temperature * (Math.pow(windSpeed, 0.16))),1);
+        return roundNumber((13.12 + (0.6215 * temperature) - 11.37 * (Math.pow(windSpeed, 0.16)) + 0.3965 * temperature * (Math.pow(windSpeed, 0.16))), 1);
     }
 
     public static double roundNumber(double inputNumber, int numberOfDecimalPlaces) {
@@ -150,4 +129,4 @@ public class Conversions {
         return Math.round(inputNumber * scale) / scale;
     }
 
-    }
+}

@@ -12,12 +12,10 @@ import java.util.Date;
 import java.util.List;
 
 
-public class StationCtrl extends Controller
-{
-    public static void index(Long id)
-    {
+public class StationCtrl extends Controller {
+    public static void index(Long id) {
         Station station = Station.findById(id);
-        Logger.info ("Station id = " + id);
+        Logger.info("Station id = " + id);
         station.maxTemperature = StationAnalytics.getMaxTemperature(station.readings);
         station.minTemperature = StationAnalytics.getMinTemperature(station.readings);
         station.maxWindSpeed = StationAnalytics.getMaxWindSpeed(station.readings);
@@ -30,21 +28,19 @@ public class StationCtrl extends Controller
         render("station.html", station);
     }
 
-    public static void addReading(Long id, int code, double temperature, double windSpeed, int pressure, int windDirection)
-    {
+    public static void addReading(Long id, int code, double temperature, double windSpeed, int pressure, int windDirection) {
         Date date = DateTime.getDateTime();
         Reading reading = new Reading(date, code, temperature, windSpeed, pressure, windDirection);
         Station station = Station.findById(id);
         station.readings.add(reading);
         station.save();
-        redirect ("/stations/" + id);
+        redirect("/stations/" + id);
     }
 
-    public static void deleteReading (Long id, Long readingid)
-    {
+    public static void deleteReading(Long id, Long readingid) {
         Station station = Station.findById(id);
         Reading reading = Reading.findById(readingid);
-        Logger.info ("Removing " + readingid);
+        Logger.info("Removing " + readingid);
         station.readings.remove(reading);
         station.save();
         reading.delete();

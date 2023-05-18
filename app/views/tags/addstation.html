@@ -1,27 +1,29 @@
 <form action="/dashboard/addstation" method="POST">
-  <div class="columns">
-  <div class="field column">
-    <label class="label">Name</label>
-    <div class="control">
-      <input class="input" placeholder="Name" type="text" name="name" required>
+    <div class="columns">
+        <div class="field column">
+            <label class="label">Name</label>
+            <div class="control">
+                <input class="input" placeholder="Name" type="text" name="name" required>
+            </div>
+        </div>
+        <div class="field column">
+            <label class="label">Latitude</label>
+            <div class="control">
+                <!--      latitude accurate to 5 decimal places which is accurate for a handheld GPS (but not surveying)-->
+                <input class="input" placeholder="00.00" type="number" name="latitude" step=".00001" min="-90" max="90"
+                       required>
+            </div>
+        </div>
+        <div class="field column">
+            <label class="label">Longitude</label>
+            <div class="control">
+                <!--      longitude accurate to 5 decimal places which is accurate for a handheld GPS (but not surveying)-->
+                <input class="input" placeholder="00.00" type="number" name="longitude" step=".00001" min="-180"
+                       max="180" required>
+            </div>
+        </div>
     </div>
-  </div>
-  <div class="field column">
-    <label class="label">Latitude</label>
-    <div class="control">
-      <!--      latitude accurate to 5 decimal places which is accurate for a handheld GPS (but not surveying)-->
-      <input class="input" placeholder="00.00" type="number" name="latitude" step=".00001" min="-90" max="90" required>
+    <div class="field mt-4">
+        <button class="button is-info">Add Station</button>
     </div>
-  </div>
-    <div class="field column">
-      <label class="label">Longitude</label>
-      <div class="control">
-        <!--      longitude accurate to 5 decimal places which is accurate for a handheld GPS (but not surveying)-->
-        <input class="input" placeholder="00.00" type="number" name="longitude" step=".00001" min="-180" max="180" required>
-      </div>
-    </div>+
-  </div>
-  <div class="field mt-4">
-    <button class="button is-info">Add Station</button>
-  </div>
 </form>

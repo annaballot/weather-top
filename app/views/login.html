@@ -2,35 +2,31 @@
 #{set title:'login' /}
 #{welcomemenu id:"login"/}
 <section class="content box">
-  <div class="columns">
-    <div class="column is-half">
-      <div class="content box">
-      <form action="/authenticate" method="POST">
-        <h3 class="subtitle">Log-in</h3>
-        <div class="field">
-          <p class="control has-icons-left">
-            <input class="input" placeholder="Email" type="email" name="email">
-            <span class="icon is-small is-left">
-              <i class="fas fa-envelope"></i>
-            </span>
-          </p>
+    <div class="columns">
+        <div class="column is-half">
+            <div class="content box">
+                <form action="/authenticate" method="POST">
+                    <h3 class="subtitle">Log-in</h3>
+                    <div class="field">
+                        <p class="control has-icons-left">
+                            <input class="input" placeholder="Email" type="email" name="email">
+                            <span class="icon is-small is-left"><i class="fas fa-envelope"></i></span>
+                        </p>
+                    </div>
+                    <div class="field">
+                        <p class="control has-icons-left">
+                            <input class="input" placeholder="Password" type="password" name="password">
+                            <span class="icon is-small is-left"><i class="fas fa-lock"></i></span>
+                        </p>
+                    </div>
+                    <button class="button is-link is-info">Login</button>
+                </form>
+            </div>
         </div>
-        <div class="field">
-          <p class="control has-icons-left">
-          <input class="input" placeholder="Password" type="password" name="password">
-          <span class="icon is-small is-left">
-              <i class="fas fa-lock"></i>
-          </span>
-          </p>
+        <div class="column is-half">
+            <figure class="image">
+                <img src="/public/images/weather-icons-set.jpg">
+            </figure>
         </div>
-        <button class="button is-link is-info">Login</button>
-      </form>
     </div>
-    </div>
-    <div class="column is-half">
-      <figure class="image">
-        <img src="/public/images/weather-icons-set.jpg">
-      </figure>
-    </div>
-  </div>
 </section>

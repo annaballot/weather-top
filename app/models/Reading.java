@@ -8,8 +8,7 @@ import util.Conversions;
 
 
 @Entity
-public class Reading extends Model
-{
+public class Reading extends Model {
     public Date date;
     public int code;
     public double temperature;
@@ -27,51 +26,46 @@ public class Reading extends Model
         this.windDirection = windDirection;
     }
 
-
     //getters
     public int getCode() {
         return code;
     }
 
-    public double getTemperature(){
+    public double getTemperature() {
         return temperature;
     }
 
-    public double getWindSpeed(){
+    public double getWindSpeed() {
         return windSpeed;
     }
 
-    public int getPressure(){
+    public int getPressure() {
         return pressure;
     }
 
-    public int getWindDirection(){
+    public int getWindDirection() {
         return windDirection;
     }
 
-    public String getWindDirectionText(){
-
+    public String getWindDirectionText() {
         return Conversions.convertWindDirection(windDirection);
     }
 
-    public double getTemperatureFahrenheit(){
+    public double getTemperatureFahrenheit() {
         return Conversions.convertTempToFahrenheit(temperature);
     }
 
-    public String getWeatherDescription(){
-
+    public String getWeatherDescription() {
         return Conversions.convertWeatherCodes(code);
     }
 
     public String getBeaufort() {
-
         return Conversions.convertBeaufort(windSpeed) + " bft";
     }
 
     public double getWindChill() {
         return Conversions.calculateWindChill(temperature, windSpeed);
     }
-
 
 
 }
