@@ -5,24 +5,24 @@
 
 #{list items:stations, as:'station'}
 <div class="content box">
-    #{if station.readings.size() > 0}
-    #{listlatestreadings station:station/}
-    #{/if}
-    #{else}
-    #{noreadings station:station/}
-    #{/else}
-    <p>
+  #{if station.readings.size() > 0}
+  #{listlatestreadings station:station/}
+  #{/if}
+  #{else}
+  #{noreadings station:station/}
+  #{/else}
+  <p>
         <span class="icon is-large">
         <a href="/stations/${station.id}" class="icon has-text-link">
             <i class="fas fa-folder fa-2xl"></i>
         </a>
         </span>
-        <span class="icon is-large">
+    <span class="icon is-large">
         <a href="/dashboard/deletestation/${station.id}" class="icon has-text-danger">
             <i class="fas fa-trash fa-2xl"></i>
         </a>
         </span>
-    </p>
+  </p>
 
 </div>
 #{/list}
