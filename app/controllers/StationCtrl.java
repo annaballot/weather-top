@@ -16,15 +16,7 @@ public class StationCtrl extends Controller {
   public static void index(Long id) {
     Station station = Station.findById(id);
     Logger.info("Station id = " + id);
-    station.maxTemperature = StationAnalytics.getMaxTemperature(station.readings);
-    station.minTemperature = StationAnalytics.getMinTemperature(station.readings);
-    station.maxWindSpeed = StationAnalytics.getMaxWindSpeed(station.readings);
-    station.minWindSpeed = StationAnalytics.getMinWindSpeed(station.readings);
-    station.maxPressure = StationAnalytics.getMaxPressure(station.readings);
-    station.minPressure = StationAnalytics.getMinPressure(station.readings);
-    station.tempTrend = StationAnalytics.getTempTrend(station, station.readings);
-    station.windSpeedTrend = StationAnalytics.getWindSpeedTrend(station, station.readings);
-    station.pressureTrend = StationAnalytics.getPressureTrend(station, station.readings);
+    StationAnalytics.calculateStationFields(station);
     render("station.html", station);
   }
 
