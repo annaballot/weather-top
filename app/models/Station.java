@@ -40,9 +40,7 @@ public class Station extends Model {
     if (readings.size() > 0) {
       return readings.get(readings.size() - 1);
     } else {
-      Date date = new Date();
-      Reading blankReading = new Reading(date, 0, 0, 0, 0, 0);
-      return blankReading;
+      return Reading.blankReading();
     }
   }
 
@@ -50,9 +48,7 @@ public class Station extends Model {
     if (readings.size() > 1) {
       return readings.get(readings.size() - 2);
     } else {
-      Date date = new Date();
-      Reading blankReading = new Reading(date, 0, 0, 0, 0, 0);
-      return blankReading;
+      return Reading.blankReading();
     }
   }
 
@@ -60,9 +56,7 @@ public class Station extends Model {
     if (readings.size() > 2) {
       return readings.get(readings.size() - 3);
     } else {
-      Date date = new Date();
-      Reading blankReading = new Reading(date, 0, 0, 0, 0, 0);
-      return blankReading;
+      return Reading.blankReading();
     }
   }
 

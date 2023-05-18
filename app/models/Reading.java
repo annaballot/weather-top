@@ -67,5 +67,10 @@ public class Reading extends Model {
     return Conversions.calculateWindChill(temperature, windSpeed);
   }
 
+  public static Reading blankReading() {
+    Date date = new Date();
+    Reading blankReading = new Reading(date, 0, 0, 0, 0, 0);
+    return blankReading;
+  }
 
 }

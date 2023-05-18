@@ -36,6 +36,7 @@ public class StationCtrl extends Controller {
     station.readings.remove(reading);
     station.save();
     reading.delete();
+    StationAnalytics.calculateStationFields(station);
     render("station.html", station);
   }
 
