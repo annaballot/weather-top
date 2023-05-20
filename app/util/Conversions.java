@@ -75,7 +75,7 @@ public class Conversions {
     return beaufort;
   }
 
-
+  //  convert from the numeric degrees value to the cardinal direction
   public static String convertWindDirection(double windDegree) {
     String compassDirection;
 

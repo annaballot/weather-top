@@ -3,10 +3,10 @@
     <div class="column is-one-fifth">
       <div class="box has-background-black has-text-white" style="height:250px;">
         <div class="columns">
-          <div class="column is-three-quarters">
+          <div class="column is-four-fifths">
             <h2 class="title has-text-white">${_station.name}</h2>
           </div>
-          <div class="column is-one-quarter">
+          <div class="column is-one-fifth">
             <i class="fa-solid fa-location-pin fa-2xl" style="color: #25c71a;"></i>
           </div>
         </div>
@@ -20,10 +20,10 @@
     <div class="column is-one-fifth">
       <div class="box has-background-black has-text-white" style="height:250px;">
         <div class="columns">
-          <div class="column is-two-thirds">
+          <div class="column is-three-quarters">
             <h2 class="title has-text-white">Weather</h2>
           </div>
-          <div class="column is-one-third">
+          <div class="column is-one-quarter">
             <i class="fa-solid fa-cloud-sun fa-2xl" style="color: #BE25AB;"></i>
           </div>
         </div>
@@ -33,7 +33,7 @@
     <div class="column is-one-fifth">
       <div class="box has-background-black has-text-white" style="height:250px;">
         <div class="columns">
-          <div class="column is-two-thirds">
+          <div class="column is-three-quarters">
             <h2 class="title has-text-white">Temp</h2>
             ${_station.getLatestReading().getTemperature()} C
             <br>
@@ -43,7 +43,7 @@
             <br>
             Min: ${_station.minTemperature}
           </div>
-          <div class="column is-one-third">
+          <div class="column is-one-quarter">
             <div class="has-text-left">
               <i class="fa-solid fa-temperature-high fa-2xl" style="color: #66BEE4;"></i>
             </div>
@@ -59,7 +59,7 @@
     <div class="column is-one-fifth">
       <div class="box has-background-black has-text-white" style="height:250px;">
         <div class="columns">
-          <div class="column is-two-thirds">
+          <div class="column is-three-quarters">
             <h2 class="title has-text-white">Wind</h2>
             ${_station.getLatestReading().getBeaufort()}
             <br>
@@ -73,7 +73,7 @@
             <br>
             Min: ${_station.minWindSpeed}
           </div>
-          <div class="column is-one-third">
+          <div class="column is-one-quarter">
             <div class="has-text-left">
               <i class="fa-solid fa-wind fa-2xl" style="color: #EDF741;"></i>
             </div>
@@ -89,7 +89,7 @@
     <div class="column is-one-fifth">
       <div class="box has-background-black has-text-white" style="height:250px;">
         <div class="columns">
-          <div class="column is-two-thirds">
+          <div class="column is-three-quarters">
             <h2 class="title has-text-white">Pressure</h2>
             ${_station.getLatestReading().getPressure()} hpa
             <br>
@@ -97,7 +97,7 @@
             <br>
             Min: ${_station.minPressure}
           </div>
-          <div class="column is-one-third">
+          <div class="column is-one-quarter">
             <div class="has-text-left">
               <i class="fa-solid fa-arrow-down-short-wide fa-2xl" style="color: #AA0C2C;"></i>
             </div>
